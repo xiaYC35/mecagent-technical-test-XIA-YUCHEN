@@ -1,6 +1,6 @@
 ### The answer of the project is in Answer_XIA.ipynb
 
-The result of the code is not as good as expected, primarily because the Gen-AI model I chose was GPT-2 Small, due to local GPU and memory constraints. I initially tried using CodeLlama, but had to abandon it for the same resource limitations. GPT-2, being a much smaller model, was more compatible with my hardware, although its performance on generative tasks is limited.
+The result of the code is not as good as expected, primarily because the Gen-AI model I chose was GPT-2 Small, due to local GPU and memory constraints. I initially tried using CodeLlama and GPT2-medium, but had to abandon it for the same resource limitations. GPT-2, being a much smaller model, was more compatible with my hardware, although its performance on generative tasks is limited.
 
 My approach involved using CLIP, a model trained to associate images with their corresponding textual descriptions via a contrastive pre-training objective. During training, CLIP learns to bring the embeddings of an image and its corresponding CadQuery code closer together, while pushing apart embeddings of unrelated pairs.
 
